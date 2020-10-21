@@ -187,5 +187,6 @@ test = np.array([50,79])
 test = (test - mean_scores)/std_scores
 test = np.append(np.ones(1), test)
 probability = logistic_function(test.dot(theta))
+### Printing the output
 print("A person who scores 50 and 79 on their DMV written tests have a",
       np.round(probability[0], 2),"probability of passing.")
